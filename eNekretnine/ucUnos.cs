@@ -35,6 +35,8 @@ namespace eNekretnine
         {
             InitializeComponent();
             Fillcombo();
+            FillVlas();
+            FillNarav();
         }
 
         //Ispis iz baze za comobox status nekretnine
@@ -71,9 +73,94 @@ namespace eNekretnine
             
         }
 
+        //Ispis iz baze za comobox vlasništvo nekretnine
+        void FillVlas()
+        {
+            //spajanje na bazu
+            string _conStr = "Server=192.168.1.121;Port=3306;Database=nekretnine;Uid=nekret;Pwd=radnekret;";
+            string Query = "select * from nekretnine.vlasnistvo;";
+            MySqlConnection mysqlCon = new MySqlConnection(_conStr);
+            MySqlCommand cmdmysql = new MySqlCommand(Query, mysqlCon);
+            MySqlDataReader myReader;
+            try
+            {
+                mysqlCon.Open();
+                myReader = cmdmysql.ExecuteReader();
+
+                while (myReader.Read())
+                {
+
+                    string sName = myReader.GetString("vlastnekret");
+                    un_vlas.Items.Add(sName);
+
+
+
+                }
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+
+
+        }
+
+        //Ispis iz baze za comobox narav nekretnine
+        void FillNarav()
+        {
+            //spajanje na bazu
+            string _conStr = "Server=192.168.1.121;Port=3306;Database=nekretnine;Uid=nekret;Pwd=radnekret;";
+            string Query = "select * from nekretnine.narav;";
+            MySqlConnection mysqlCon = new MySqlConnection(_conStr);
+            MySqlCommand cmdmysql = new MySqlCommand(Query, mysqlCon);
+            MySqlDataReader myReader;
+            try
+            {
+                mysqlCon.Open();
+                myReader = cmdmysql.ExecuteReader();
+
+                while (myReader.Read())
+                {
+
+                    string sName = myReader.GetString("narnekret");
+                    un_narav.Items.Add(sName);
+
+
+
+                }
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+
+
+        }
+
         private void un_stat_SelectedIndexChanged(object sender, EventArgs e)
         {
-            this.un_stat.DropDownStyle = ComboBoxStyle.DropDownList;
+           
+
+        }
+       
+        private void un_vlas_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            this.un_vlas.DropDownStyle = ComboBoxStyle.DropDownList;
+        }
+
+        private void ucUnos_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void un_narav_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            this.un_narav.DropDownStyle = ComboBoxStyle.DropDownList;
+
         }
     }
 }

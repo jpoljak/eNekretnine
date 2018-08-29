@@ -43,7 +43,10 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.un_stat = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.un_vlas = new System.Windows.Forms.ComboBox();
+            this.un_narav = new System.Windows.Forms.ComboBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -51,7 +54,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Verdana", 15F);
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(38, 47);
+            this.label1.Location = new System.Drawing.Point(24, 47);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(77, 25);
             this.label1.TabIndex = 0;
@@ -62,7 +65,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Verdana", 15F);
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(369, 47);
+            this.label2.Location = new System.Drawing.Point(258, 47);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(115, 25);
             this.label2.TabIndex = 1;
@@ -73,7 +76,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Verdana", 15F);
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(38, 120);
+            this.label3.Location = new System.Drawing.Point(532, 47);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(189, 25);
             this.label3.TabIndex = 2;
@@ -84,7 +87,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Verdana", 15F);
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(471, 120);
+            this.label4.Location = new System.Drawing.Point(24, 102);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(172, 25);
             this.label4.TabIndex = 3;
@@ -95,7 +98,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Verdana", 15F);
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(182, 211);
+            this.label5.Location = new System.Drawing.Point(465, 102);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(170, 25);
             this.label5.TabIndex = 4;
@@ -202,26 +205,61 @@
             // 
             // un_stat
             // 
+            this.un_stat.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.un_stat.Font = new System.Drawing.Font("Verdana", 12F);
             this.un_stat.FormattingEnabled = true;
-            this.un_stat.Location = new System.Drawing.Point(159, 51);
+            this.un_stat.Location = new System.Drawing.Point(107, 46);
             this.un_stat.Name = "un_stat";
-            this.un_stat.Size = new System.Drawing.Size(121, 21);
+            this.un_stat.Size = new System.Drawing.Size(121, 26);
             this.un_stat.TabIndex = 14;
             this.un_stat.SelectedIndexChanged += new System.EventHandler(this.un_stat_SelectedIndexChanged);
             // 
-            // comboBox2
+            // un_vlas
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(548, 51);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 21);
-            this.comboBox2.TabIndex = 15;
+            this.un_vlas.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.un_vlas.Font = new System.Drawing.Font("Verdana", 12F);
+            this.un_vlas.FormattingEnabled = true;
+            this.un_vlas.Location = new System.Drawing.Point(379, 46);
+            this.un_vlas.Name = "un_vlas";
+            this.un_vlas.Size = new System.Drawing.Size(142, 26);
+            this.un_vlas.TabIndex = 15;
+            this.un_vlas.SelectedIndexChanged += new System.EventHandler(this.un_vlas_SelectedIndexChanged);
+            // 
+            // un_narav
+            // 
+            this.un_narav.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.un_narav.Font = new System.Drawing.Font("Verdana", 12F);
+            this.un_narav.FormattingEnabled = true;
+            this.un_narav.Location = new System.Drawing.Point(727, 46);
+            this.un_narav.Name = "un_narav";
+            this.un_narav.Size = new System.Drawing.Size(291, 26);
+            this.un_narav.TabIndex = 16;
+            this.un_narav.SelectedIndexChanged += new System.EventHandler(this.un_narav_SelectedIndexChanged);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Verdana", 12F);
+            this.textBox1.Location = new System.Drawing.Point(202, 107);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(210, 27);
+            this.textBox1.TabIndex = 17;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("Verdana", 12F);
+            this.textBox2.Location = new System.Drawing.Point(641, 107);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(135, 27);
+            this.textBox2.TabIndex = 18;
             // 
             // ucUnos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.un_narav);
+            this.Controls.Add(this.un_vlas);
             this.Controls.Add(this.un_stat);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);
@@ -239,6 +277,7 @@
             this.Controls.Add(this.label1);
             this.Name = "ucUnos";
             this.Size = new System.Drawing.Size(1155, 747);
+            this.Load += new System.EventHandler(this.ucUnos_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -261,6 +300,9 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.ComboBox un_stat;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox un_vlas;
+        private System.Windows.Forms.ComboBox un_narav;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
     }
 }
