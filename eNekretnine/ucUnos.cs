@@ -15,7 +15,7 @@ namespace eNekretnine
     public partial class ucUnos : UserControl
     {
         private static ucUnos _instance;
-
+        Dictionary<string, Int32> test = new Dictionary<string, Int32>();
         public static ucUnos Instance
         {
             get
@@ -56,23 +56,31 @@ namespace eNekretnine
 
                 while (myReader.Read())
                 {
+                    string sName = myReader.GetString("statnekret");
+                    int sName2 = int.Parse(myReader.GetString("id_status"));
 
+                    un_stat.Items.Add(sName);
+                    test[sName] = sName2;
+                    /*
                     string sName = myReader.GetString("statnekret");
                     //string sName2 = myReader.GetString("id_status");
                     int test2 = Convert.ToInt32(myReader.GetString("id_status"));
                     //un_stat.Items.Add(sName);
                     //un_stat.ValueMember = sName2.ToString();
-                    int sName3;
-                    Dictionary<string, Int32> test = new Dictionary<string, Int32>();
-                    test.Add(sName, test2);
+                    //int sName3;
+                    un_stat.Items.Add(sName);
+                    
+                    
                     foreach(KeyValuePair<string, Int32>stat in test)
                     {
+                        test.Add(sName, test2);
+                        
                         un_stat.SelectedValue = stat.Value.ToString();
-                        un_stat.Items.Add(sName);
+                        
 
 
                     }
-                   
+                   */
 
 
 
@@ -186,7 +194,7 @@ namespace eNekretnine
             string sQuery = "select * nekretnine.narav;";
 
            
-            string Query = "insert into test (id_status) values ('" +un_stat.SelectedValue.ToString() + "');";
+            string Query = "insert into test (id_status) values ('" +un_stat.ValueMember.ToString() + "');";
             
             //string Query = "insert into nekretnina (id_status,id_vlasnistvo,id_narav,prij_vals,br_os,datum,br_zk,br_zk_ul,kat_op,br_kat_c,pov,nab_vr,vr_zem,biljeske) values ('"+ this.un_stat.SelectedValue.ToString() + "','" + this.un_vlas.Text + "','" + this.un_narav.Text + "','" + this.pr_vlas.Text + "','" + this.br_os.Text + "','" + this.datum.Text + "','" + this.br_zk.Text + "','" + this.br_zk_ul.Text + "','" + this.kat_op.Text + "','" + this.br_kat_c.Text + "','" + this.pov.Text + "','" + this.nab_vrij.Text + "','" + this.vr_zem.Text + "','" + this.biljeske.Text + "') ;";
             MySqlConnection conDataBase = new MySqlConnection(_conStr);
