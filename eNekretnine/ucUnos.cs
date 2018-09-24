@@ -58,9 +58,20 @@ namespace eNekretnine
                 {
 
                     string sName = myReader.GetString("statnekret");
-                    string sName2 = myReader.GetString("id_status");
-                    un_stat.Items.Add(sName);
-                    un_stat.ValueMember = sName2.ToString();
+                    //string sName2 = myReader.GetString("id_status");
+                    int test2 = Convert.ToInt32(myReader.GetString("id_status"));
+                    //un_stat.Items.Add(sName);
+                    //un_stat.ValueMember = sName2.ToString();
+                    int sName3;
+                    Dictionary<string, Int32> test = new Dictionary<string, Int32>();
+                    test.Add(sName, test2);
+                    foreach(KeyValuePair<string, Int32>stat in test)
+                    {
+                        un_stat.SelectedValue = stat.Value.ToString();
+                        un_stat.Items.Add(sName);
+
+
+                    }
                    
 
 
@@ -175,7 +186,7 @@ namespace eNekretnine
             string sQuery = "select * nekretnine.narav;";
 
            
-            string Query = "insert into test (id_status) values ('" +this. un_stat.SelectedValue.ToString() + "');";
+            string Query = "insert into test (id_status) values ('" +un_stat.SelectedValue.ToString() + "');";
             
             //string Query = "insert into nekretnina (id_status,id_vlasnistvo,id_narav,prij_vals,br_os,datum,br_zk,br_zk_ul,kat_op,br_kat_c,pov,nab_vr,vr_zem,biljeske) values ('"+ this.un_stat.SelectedValue.ToString() + "','" + this.un_vlas.Text + "','" + this.un_narav.Text + "','" + this.pr_vlas.Text + "','" + this.br_os.Text + "','" + this.datum.Text + "','" + this.br_zk.Text + "','" + this.br_zk_ul.Text + "','" + this.kat_op.Text + "','" + this.br_kat_c.Text + "','" + this.pov.Text + "','" + this.nab_vrij.Text + "','" + this.vr_zem.Text + "','" + this.biljeske.Text + "') ;";
             MySqlConnection conDataBase = new MySqlConnection(_conStr);
