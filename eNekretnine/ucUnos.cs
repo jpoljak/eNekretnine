@@ -194,7 +194,7 @@ namespace eNekretnine
             string sQuery = "select * nekretnine.narav;";
 
            
-            string Query = "insert into test (id_status) values ('" +un_stat.ValueMember.ToString() + "');";
+            string Query = "insert into test (id_status) values ('" +test[un_stat.SelectedValue.ToString()] + "');";
             
             //string Query = "insert into nekretnina (id_status,id_vlasnistvo,id_narav,prij_vals,br_os,datum,br_zk,br_zk_ul,kat_op,br_kat_c,pov,nab_vr,vr_zem,biljeske) values ('"+ this.un_stat.SelectedValue.ToString() + "','" + this.un_vlas.Text + "','" + this.un_narav.Text + "','" + this.pr_vlas.Text + "','" + this.br_os.Text + "','" + this.datum.Text + "','" + this.br_zk.Text + "','" + this.br_zk_ul.Text + "','" + this.kat_op.Text + "','" + this.br_kat_c.Text + "','" + this.pov.Text + "','" + this.nab_vrij.Text + "','" + this.vr_zem.Text + "','" + this.biljeske.Text + "') ;";
             MySqlConnection conDataBase = new MySqlConnection(_conStr);
