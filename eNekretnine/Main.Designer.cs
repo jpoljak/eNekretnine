@@ -38,7 +38,7 @@
             // 
             this.panel1.Location = new System.Drawing.Point(12, 56);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1155, 674);
+            this.panel1.Size = new System.Drawing.Size(1155, 747);
             this.panel1.TabIndex = 0;
             // 
             // btnUnos
@@ -74,7 +74,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1179, 742);
+            this.ClientSize = new System.Drawing.Size(1179, 718);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.btnPregled);
             this.Controls.Add(this.btnUnos);

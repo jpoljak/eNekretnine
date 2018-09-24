@@ -45,26 +45,27 @@
             this.un_stat = new System.Windows.Forms.ComboBox();
             this.un_vlas = new System.Windows.Forms.ComboBox();
             this.un_narav = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.pr_vlas = new System.Windows.Forms.TextBox();
+            this.br_os = new System.Windows.Forms.TextBox();
+            this.datum = new System.Windows.Forms.DateTimePicker();
+            this.br_zk = new System.Windows.Forms.TextBox();
+            this.br_zk_ul = new System.Windows.Forms.TextBox();
+            this.kat_op = new System.Windows.Forms.TextBox();
+            this.br_kat_c = new System.Windows.Forms.TextBox();
+            this.pov = new System.Windows.Forms.TextBox();
+            this.nab_vrij = new System.Windows.Forms.TextBox();
+            this.vr_zem = new System.Windows.Forms.TextBox();
+            this.biljeske = new System.Windows.Forms.RichTextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
-            this.rectangleShape1 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
-            this.rectangleShape2 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
-            this.rectangleShape3 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
-            this.rectangleShape4 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
-            this.rectangleShape5 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
-            this.rectangleShape6 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
             this.rectangleShape7 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
+            this.rectangleShape6 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
+            this.rectangleShape5 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
+            this.rectangleShape4 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
+            this.rectangleShape3 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
+            this.rectangleShape2 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
+            this.rectangleShape1 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
+            this.unos = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -268,94 +269,94 @@
             this.un_narav.TabIndex = 16;
             this.un_narav.SelectedIndexChanged += new System.EventHandler(this.un_narav_SelectedIndexChanged);
             // 
-            // textBox1
+            // pr_vlas
             // 
-            this.textBox1.Font = new System.Drawing.Font("Verdana", 12F);
-            this.textBox1.Location = new System.Drawing.Point(202, 100);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(210, 27);
-            this.textBox1.TabIndex = 17;
+            this.pr_vlas.Font = new System.Drawing.Font("Verdana", 12F);
+            this.pr_vlas.Location = new System.Drawing.Point(202, 100);
+            this.pr_vlas.Name = "pr_vlas";
+            this.pr_vlas.Size = new System.Drawing.Size(210, 27);
+            this.pr_vlas.TabIndex = 17;
             // 
-            // textBox2
+            // br_os
             // 
-            this.textBox2.Font = new System.Drawing.Font("Verdana", 12F);
-            this.textBox2.Location = new System.Drawing.Point(641, 100);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(135, 27);
-            this.textBox2.TabIndex = 18;
+            this.br_os.Font = new System.Drawing.Font("Verdana", 12F);
+            this.br_os.Location = new System.Drawing.Point(641, 100);
+            this.br_os.Name = "br_os";
+            this.br_os.Size = new System.Drawing.Size(135, 27);
+            this.br_os.TabIndex = 18;
             // 
-            // dateTimePicker1
+            // datum
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Verdana", 12F);
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(185, 155);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(135, 27);
-            this.dateTimePicker1.TabIndex = 20;
+            this.datum.Font = new System.Drawing.Font("Verdana", 12F);
+            this.datum.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.datum.Location = new System.Drawing.Point(185, 155);
+            this.datum.Name = "datum";
+            this.datum.Size = new System.Drawing.Size(135, 27);
+            this.datum.TabIndex = 20;
             // 
-            // textBox3
+            // br_zk
             // 
-            this.textBox3.Font = new System.Drawing.Font("Verdana", 12F);
-            this.textBox3.Location = new System.Drawing.Point(527, 155);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(135, 27);
-            this.textBox3.TabIndex = 21;
+            this.br_zk.Font = new System.Drawing.Font("Verdana", 12F);
+            this.br_zk.Location = new System.Drawing.Point(527, 155);
+            this.br_zk.Name = "br_zk";
+            this.br_zk.Size = new System.Drawing.Size(135, 27);
+            this.br_zk.TabIndex = 21;
             // 
-            // textBox4
+            // br_zk_ul
             // 
-            this.textBox4.Font = new System.Drawing.Font("Verdana", 12F);
-            this.textBox4.Location = new System.Drawing.Point(870, 153);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(135, 27);
-            this.textBox4.TabIndex = 22;
+            this.br_zk_ul.Font = new System.Drawing.Font("Verdana", 12F);
+            this.br_zk_ul.Location = new System.Drawing.Point(870, 153);
+            this.br_zk_ul.Name = "br_zk_ul";
+            this.br_zk_ul.Size = new System.Drawing.Size(135, 27);
+            this.br_zk_ul.TabIndex = 22;
             // 
-            // textBox5
+            // kat_op
             // 
-            this.textBox5.Font = new System.Drawing.Font("Verdana", 12F);
-            this.textBox5.Location = new System.Drawing.Point(232, 207);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(289, 27);
-            this.textBox5.TabIndex = 23;
+            this.kat_op.Font = new System.Drawing.Font("Verdana", 12F);
+            this.kat_op.Location = new System.Drawing.Point(232, 207);
+            this.kat_op.Name = "kat_op";
+            this.kat_op.Size = new System.Drawing.Size(289, 27);
+            this.kat_op.TabIndex = 23;
             // 
-            // textBox6
+            // br_kat_c
             // 
-            this.textBox6.Font = new System.Drawing.Font("Verdana", 12F);
-            this.textBox6.Location = new System.Drawing.Point(828, 207);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(135, 27);
-            this.textBox6.TabIndex = 24;
+            this.br_kat_c.Font = new System.Drawing.Font("Verdana", 12F);
+            this.br_kat_c.Location = new System.Drawing.Point(828, 207);
+            this.br_kat_c.Name = "br_kat_c";
+            this.br_kat_c.Size = new System.Drawing.Size(135, 27);
+            this.br_kat_c.TabIndex = 24;
             // 
-            // textBox7
+            // pov
             // 
-            this.textBox7.Font = new System.Drawing.Font("Verdana", 12F);
-            this.textBox7.Location = new System.Drawing.Point(128, 259);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(135, 27);
-            this.textBox7.TabIndex = 25;
+            this.pov.Font = new System.Drawing.Font("Verdana", 12F);
+            this.pov.Location = new System.Drawing.Point(128, 259);
+            this.pov.Name = "pov";
+            this.pov.Size = new System.Drawing.Size(135, 27);
+            this.pov.TabIndex = 25;
             // 
-            // textBox8
+            // nab_vrij
             // 
-            this.textBox8.Font = new System.Drawing.Font("Verdana", 12F);
-            this.textBox8.Location = new System.Drawing.Point(507, 259);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(135, 27);
-            this.textBox8.TabIndex = 26;
+            this.nab_vrij.Font = new System.Drawing.Font("Verdana", 12F);
+            this.nab_vrij.Location = new System.Drawing.Point(507, 259);
+            this.nab_vrij.Name = "nab_vrij";
+            this.nab_vrij.Size = new System.Drawing.Size(135, 27);
+            this.nab_vrij.TabIndex = 26;
             // 
-            // textBox9
+            // vr_zem
             // 
-            this.textBox9.Font = new System.Drawing.Font("Verdana", 12F);
-            this.textBox9.Location = new System.Drawing.Point(870, 259);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(205, 27);
-            this.textBox9.TabIndex = 27;
+            this.vr_zem.Font = new System.Drawing.Font("Verdana", 12F);
+            this.vr_zem.Location = new System.Drawing.Point(870, 259);
+            this.vr_zem.Name = "vr_zem";
+            this.vr_zem.Size = new System.Drawing.Size(205, 27);
+            this.vr_zem.TabIndex = 27;
             // 
-            // richTextBox1
+            // biljeske
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(121, 436);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(754, 264);
-            this.richTextBox1.TabIndex = 28;
-            this.richTextBox1.Text = "";
+            this.biljeske.Location = new System.Drawing.Point(121, 436);
+            this.biljeske.Name = "biljeske";
+            this.biljeske.Size = new System.Drawing.Size(754, 264);
+            this.biljeske.TabIndex = 28;
+            this.biljeske.Text = "";
             // 
             // label15
             // 
@@ -382,63 +383,9 @@
             this.rectangleShape3,
             this.rectangleShape2,
             this.rectangleShape1});
-            this.shapeContainer1.Size = new System.Drawing.Size(1155, 747);
+            this.shapeContainer1.Size = new System.Drawing.Size(1144, 754);
             this.shapeContainer1.TabIndex = 30;
             this.shapeContainer1.TabStop = false;
-            // 
-            // rectangleShape1
-            // 
-            this.rectangleShape1.BackColor = System.Drawing.Color.SlateGray;
-            this.rectangleShape1.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque;
-            this.rectangleShape1.FillGradientColor = System.Drawing.Color.SkyBlue;
-            this.rectangleShape1.Location = new System.Drawing.Point(20, 33);
-            this.rectangleShape1.Name = "rectangleShape1";
-            this.rectangleShape1.Size = new System.Drawing.Size(1069, 52);
-            // 
-            // rectangleShape2
-            // 
-            this.rectangleShape2.BackColor = System.Drawing.Color.SlateGray;
-            this.rectangleShape2.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque;
-            this.rectangleShape2.FillGradientColor = System.Drawing.Color.SkyBlue;
-            this.rectangleShape2.Location = new System.Drawing.Point(20, 86);
-            this.rectangleShape2.Name = "rectangleShape2";
-            this.rectangleShape2.Size = new System.Drawing.Size(1069, 52);
-            // 
-            // rectangleShape3
-            // 
-            this.rectangleShape3.BackColor = System.Drawing.Color.SlateGray;
-            this.rectangleShape3.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque;
-            this.rectangleShape3.FillGradientColor = System.Drawing.Color.SkyBlue;
-            this.rectangleShape3.Location = new System.Drawing.Point(20, 139);
-            this.rectangleShape3.Name = "rectangleShape3";
-            this.rectangleShape3.Size = new System.Drawing.Size(1069, 52);
-            // 
-            // rectangleShape4
-            // 
-            this.rectangleShape4.BackColor = System.Drawing.Color.SlateGray;
-            this.rectangleShape4.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque;
-            this.rectangleShape4.FillGradientColor = System.Drawing.Color.SkyBlue;
-            this.rectangleShape4.Location = new System.Drawing.Point(20, 192);
-            this.rectangleShape4.Name = "rectangleShape4";
-            this.rectangleShape4.Size = new System.Drawing.Size(1069, 52);
-            // 
-            // rectangleShape5
-            // 
-            this.rectangleShape5.BackColor = System.Drawing.Color.SlateGray;
-            this.rectangleShape5.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque;
-            this.rectangleShape5.FillGradientColor = System.Drawing.Color.SkyBlue;
-            this.rectangleShape5.Location = new System.Drawing.Point(20, 245);
-            this.rectangleShape5.Name = "rectangleShape5";
-            this.rectangleShape5.Size = new System.Drawing.Size(1069, 52);
-            // 
-            // rectangleShape6
-            // 
-            this.rectangleShape6.BackColor = System.Drawing.Color.SlateGray;
-            this.rectangleShape6.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque;
-            this.rectangleShape6.FillGradientColor = System.Drawing.Color.SkyBlue;
-            this.rectangleShape6.Location = new System.Drawing.Point(20, 298);
-            this.rectangleShape6.Name = "rectangleShape6";
-            this.rectangleShape6.Size = new System.Drawing.Size(1069, 122);
             // 
             // rectangleShape7
             // 
@@ -449,22 +396,87 @@
             this.rectangleShape7.Name = "rectangleShape7";
             this.rectangleShape7.Size = new System.Drawing.Size(1069, 360);
             // 
+            // rectangleShape6
+            // 
+            this.rectangleShape6.BackColor = System.Drawing.Color.SlateGray;
+            this.rectangleShape6.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque;
+            this.rectangleShape6.FillGradientColor = System.Drawing.Color.SkyBlue;
+            this.rectangleShape6.Location = new System.Drawing.Point(20, 298);
+            this.rectangleShape6.Name = "rectangleShape6";
+            this.rectangleShape6.Size = new System.Drawing.Size(1069, 122);
+            // 
+            // rectangleShape5
+            // 
+            this.rectangleShape5.BackColor = System.Drawing.Color.SlateGray;
+            this.rectangleShape5.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque;
+            this.rectangleShape5.FillGradientColor = System.Drawing.Color.SkyBlue;
+            this.rectangleShape5.Location = new System.Drawing.Point(20, 245);
+            this.rectangleShape5.Name = "rectangleShape5";
+            this.rectangleShape5.Size = new System.Drawing.Size(1069, 52);
+            // 
+            // rectangleShape4
+            // 
+            this.rectangleShape4.BackColor = System.Drawing.Color.SlateGray;
+            this.rectangleShape4.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque;
+            this.rectangleShape4.FillGradientColor = System.Drawing.Color.SkyBlue;
+            this.rectangleShape4.Location = new System.Drawing.Point(20, 192);
+            this.rectangleShape4.Name = "rectangleShape4";
+            this.rectangleShape4.Size = new System.Drawing.Size(1069, 52);
+            // 
+            // rectangleShape3
+            // 
+            this.rectangleShape3.BackColor = System.Drawing.Color.SlateGray;
+            this.rectangleShape3.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque;
+            this.rectangleShape3.FillGradientColor = System.Drawing.Color.SkyBlue;
+            this.rectangleShape3.Location = new System.Drawing.Point(20, 139);
+            this.rectangleShape3.Name = "rectangleShape3";
+            this.rectangleShape3.Size = new System.Drawing.Size(1069, 52);
+            // 
+            // rectangleShape2
+            // 
+            this.rectangleShape2.BackColor = System.Drawing.Color.SlateGray;
+            this.rectangleShape2.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque;
+            this.rectangleShape2.FillGradientColor = System.Drawing.Color.SkyBlue;
+            this.rectangleShape2.Location = new System.Drawing.Point(20, 86);
+            this.rectangleShape2.Name = "rectangleShape2";
+            this.rectangleShape2.Size = new System.Drawing.Size(1069, 52);
+            // 
+            // rectangleShape1
+            // 
+            this.rectangleShape1.BackColor = System.Drawing.Color.SlateGray;
+            this.rectangleShape1.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque;
+            this.rectangleShape1.FillGradientColor = System.Drawing.Color.SkyBlue;
+            this.rectangleShape1.Location = new System.Drawing.Point(20, 33);
+            this.rectangleShape1.Name = "rectangleShape1";
+            this.rectangleShape1.Size = new System.Drawing.Size(1069, 52);
+            // 
+            // unos
+            // 
+            this.unos.Location = new System.Drawing.Point(938, 672);
+            this.unos.Name = "unos";
+            this.unos.Size = new System.Drawing.Size(91, 28);
+            this.unos.TabIndex = 31;
+            this.unos.Text = "Unos";
+            this.unos.UseVisualStyleBackColor = true;
+            this.unos.Click += new System.EventHandler(this.unos_Click);
+            // 
             // ucUnos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.unos);
             this.Controls.Add(this.label15);
-            this.Controls.Add(this.richTextBox1);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.biljeske);
+            this.Controls.Add(this.vr_zem);
+            this.Controls.Add(this.nab_vrij);
+            this.Controls.Add(this.pov);
+            this.Controls.Add(this.br_kat_c);
+            this.Controls.Add(this.kat_op);
+            this.Controls.Add(this.br_zk_ul);
+            this.Controls.Add(this.br_zk);
+            this.Controls.Add(this.datum);
+            this.Controls.Add(this.br_os);
+            this.Controls.Add(this.pr_vlas);
             this.Controls.Add(this.un_narav);
             this.Controls.Add(this.un_vlas);
             this.Controls.Add(this.un_stat);
@@ -484,7 +496,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.shapeContainer1);
             this.Name = "ucUnos";
-            this.Size = new System.Drawing.Size(1155, 747);
+            this.Size = new System.Drawing.Size(1144, 754);
             this.Load += new System.EventHandler(this.ucUnos_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -510,17 +522,17 @@
         private System.Windows.Forms.ComboBox un_stat;
         private System.Windows.Forms.ComboBox un_vlas;
         private System.Windows.Forms.ComboBox un_narav;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.TextBox pr_vlas;
+        private System.Windows.Forms.TextBox br_os;
+        private System.Windows.Forms.DateTimePicker datum;
+        private System.Windows.Forms.TextBox br_zk;
+        private System.Windows.Forms.TextBox br_zk_ul;
+        private System.Windows.Forms.TextBox kat_op;
+        private System.Windows.Forms.TextBox br_kat_c;
+        private System.Windows.Forms.TextBox pov;
+        private System.Windows.Forms.TextBox nab_vrij;
+        private System.Windows.Forms.TextBox vr_zem;
+        private System.Windows.Forms.RichTextBox biljeske;
         private System.Windows.Forms.Label label15;
         private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;
         private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape1;
@@ -530,5 +542,6 @@
         private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape4;
         private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape3;
         private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape2;
+        private System.Windows.Forms.Button unos;
     }
 }

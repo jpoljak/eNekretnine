@@ -27,10 +27,11 @@ namespace eNekretnine
 
 
         }
+
+        // Nekakav pokusaj
         
 
 
-        
         public ucUnos()
         {
             InitializeComponent();
@@ -40,7 +41,7 @@ namespace eNekretnine
         }
 
         //Ispis iz baze za comobox status nekretnine
-        void Fillcombo()
+        public void Fillcombo()
         {
             //spajanje na bazu
             string _conStr = "Server=192.168.1.121;Port=3306;Database=nekretnine;Uid=nekret;Pwd=radnekret;";
@@ -57,7 +58,10 @@ namespace eNekretnine
                 {
 
                     string sName = myReader.GetString("statnekret");
+                    string sName2 = myReader.GetString("id_status");
                     un_stat.Items.Add(sName);
+                    un_stat.ValueMember = sName2.ToString();
+                   
 
 
 
@@ -68,9 +72,9 @@ namespace eNekretnine
             {
                 MessageBox.Show(ex.Message);
             }
-         
 
-            
+
+
         }
 
         //Ispis iz baze za comobox vlasništvo nekretnine
@@ -116,6 +120,7 @@ namespace eNekretnine
             MySqlConnection mysqlCon = new MySqlConnection(_conStr);
             MySqlCommand cmdmysql = new MySqlCommand(Query, mysqlCon);
             MySqlDataReader myReader;
+            
             try
             {
                 mysqlCon.Open();
@@ -126,7 +131,7 @@ namespace eNekretnine
 
                     string sName = myReader.GetString("narnekret");
                     un_narav.Items.Add(sName);
-
+                    
 
 
                 }
@@ -143,10 +148,10 @@ namespace eNekretnine
 
         private void un_stat_SelectedIndexChanged(object sender, EventArgs e)
         {
-           
+
 
         }
-       
+
         private void un_vlas_SelectedIndexChanged(object sender, EventArgs e)
         {
             this.un_vlas.DropDownStyle = ComboBoxStyle.DropDownList;
@@ -154,12 +159,43 @@ namespace eNekretnine
 
         private void ucUnos_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void un_narav_SelectedIndexChanged(object sender, EventArgs e)
         {
             this.un_narav.DropDownStyle = ComboBoxStyle.DropDownList;
+
+        }
+
+        private void unos_Click(object sender, EventArgs e)
+        {
+            //spajanje na bazu
+            string _conStr = "Server=192.168.1.121;Port=3306;Database=nekretnine;Uid=nekret;Pwd=radnekret;";
+            string sQuery = "select * nekretnine.narav;";
+
+           
+            string Query = "insert into test (id_status) values ('" +this. un_stat.SelectedValue.ToString() + "');";
+            
+            //string Query = "insert into nekretnina (id_status,id_vlasnistvo,id_narav,prij_vals,br_os,datum,br_zk,br_zk_ul,kat_op,br_kat_c,pov,nab_vr,vr_zem,biljeske) values ('"+ this.un_stat.SelectedValue.ToString() + "','" + this.un_vlas.Text + "','" + this.un_narav.Text + "','" + this.pr_vlas.Text + "','" + this.br_os.Text + "','" + this.datum.Text + "','" + this.br_zk.Text + "','" + this.br_zk_ul.Text + "','" + this.kat_op.Text + "','" + this.br_kat_c.Text + "','" + this.pov.Text + "','" + this.nab_vrij.Text + "','" + this.vr_zem.Text + "','" + this.biljeske.Text + "') ;";
+            MySqlConnection conDataBase = new MySqlConnection(_conStr);
+            MySqlCommand cmdDataBase = new MySqlCommand(Query, conDataBase);
+            MySqlDataReader myReader;
+            
+            try
+            {
+                conDataBase.Open();
+                myReader = cmdDataBase.ExecuteReader();
+                MessageBox.Show("Spremljeno!");
+                while (myReader.Read())
+                {
+
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
 
         }
     }
